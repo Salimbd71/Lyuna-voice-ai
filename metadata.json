@@ -1,0 +1,6 @@
+{
+  "name": "Lyuna Voice AI",
+  "description": "Modern AI Text-to-Speech platform for high-quality, human-like Bengali voice generation with emotion controls and connected Telegram Bot (@SLM71_bot).",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
