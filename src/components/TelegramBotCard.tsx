@@ -64,7 +64,7 @@ export const TelegramBotCard: React.FC<TelegramBotCardProps> = ({ isDark }) => {
     return () => clearInterval(interval);
   }, []);
 
-  const botUsername = status?.username || 'SLM71_bot';
+  const botUsername = status?.username || 'Lyunavoiceai71_bot';
   const botLink = status?.botLink || `https://t.me/${botUsername}`;
 
   return (
@@ -96,7 +96,7 @@ export const TelegramBotCard: React.FC<TelegramBotCardProps> = ({ isDark }) => {
             <div>
               <div className="flex items-center gap-2 flex-wrap">
                 <h3 className="text-base sm:text-lg font-bold">
-                  {status?.firstName || 'SLM'}
+                  {status?.firstName || 'Lyuna Voice AI'}
                 </h3>
                 <span className="text-xs font-mono px-2 py-0.5 rounded-md bg-sky-500/10 text-sky-400 border border-sky-500/20">
                   @{botUsername}

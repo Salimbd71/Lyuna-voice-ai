@@ -59,7 +59,7 @@ export const Header: React.FC<HeaderProps> = ({
         <div className="flex items-center gap-2 sm:gap-2.5">
           {/* Telegram Bot Link Badge */}
           <a
-            href="https://t.me/SLM71_bot"
+            href="https://t.me/Lyunavoiceai71_bot"
             target="_blank"
             rel="noopener noreferrer"
             title="Open Lyuna Voice AI bot in Telegram"
@@ -70,7 +70,7 @@ export const Header: React.FC<HeaderProps> = ({
             }`}
           >
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-            <span>@SLM71_bot</span>
+            <span>@Lyunavoiceai71_bot</span>
           </a>
 
           {/* Language Mode Toggle */}

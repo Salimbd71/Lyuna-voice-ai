@@ -349,7 +349,7 @@ async function handleTelegramMessage(message: any) {
 
   // 1. /start or /help
   if (rawText.startsWith("/start") || rawText.startsWith("/help")) {
-    const welcome = `👋 <b>স্বাগতম ${fromUser}!</b>\nআমি <b>SLM (@SLM71_bot)</b>, <b>Lyuna Voice AI</b>-এর অফিশিয়াল এআই ভয়েস অ্যাসিস্ট্যান্ট।\n\n🎙️ <b>আমি কি করতে পারি:</b>\nযেকোনো বাংলা বা ইংরেজি টেক্সট আমাকে লিখে পাঠান, আমি মুহূর্তেই প্রাকৃতিক ও স্পষ্ট বাংলা কণ্ঠে (AI Voice) রূপান্তর করে অডিও পাঠিয়ে দেব!\n\n⚙️ <b>কমান্ডসমূহ:</b>\n👉 <code>/voice</code> - ভয়েস মডেল পরিবর্তন (ফারহানা, কবির, রোদেলা, ইকবাল)\n👉 <code>/emotion</code> - আবেগ ও সুর নির্বাচন\n👉 <code>/settings</code> - বর্তমান সেটিংস দেখুন\n👉 <code>/webapp</code> - Lyuna Voice AI ওয়েব অ্যাপ লিঙ্ক\n\n<i>এখনই যেকোনো টেক্সট লিখে পাঠান এবং ম্যাজিক দেখুন!</i>`;
+    const welcome = `👋 <b>স্বাগতম ${fromUser}!</b>\nআমি <b>Lyuna Voice AI (@Lyunavoiceai71_bot)</b>-এর অফিশিয়াল এআই ভয়েস অ্যাসিস্ট্যান্ট।\n\n🎙️ <b>আমি কি করতে পারি:</b>\nযেকোনো বাংলা বা ইংরেজি টেক্সট আমাকে লিখে পাঠান, আমি মুহূর্তেই প্রাকৃতিক ও স্পষ্ট বাংলা কণ্ঠে (AI Voice) রূপান্তর করে অডিও পাঠিয়ে দেব!\n\n⚙️ <b>কমান্ডসমূহ:</b>\n👉 <code>/voice</code> - ভয়েস মডেল পরিবর্তন (ফারহানা, কবির, রোদেলা, ইকবাল)\n👉 <code>/emotion</code> - আবেগ ও সুর নির্বাচন\n👉 <code>/settings</code> - বর্তমান সেটিংস দেখুন\n👉 <code>/webapp</code> - Lyuna Voice AI ওয়েব অ্যাপ লিঙ্ক\n\n<i>এখনই যেকোনো টেক্সট লিখে পাঠান এবং ম্যাজিক দেখুন!</i>`;
 
     const keyboard = {
       inline_keyboard: [
@@ -445,7 +445,7 @@ async function handleTelegramMessage(message: any) {
       pitch: userPrefs.pitch,
     });
 
-    const caption = `কণ্ঠ: ${v.bengaliName} (${v.title}) | আবেগ: ${userPrefs.emotion}\nপরিবেশনায়: Lyuna Voice AI (@SLM71_bot)`;
+    const caption = `কণ্ঠ: ${v.bengaliName} (${v.title}) | আবেগ: ${userPrefs.emotion}\nপরিবেশনায়: Lyuna Voice AI (@Lyunavoiceai71_bot)`;
     const title = `Lyuna - ${rawText.slice(0, 24)}...`;
     const performer = `${v.title} (${v.bengaliName})`;
 
@@ -608,7 +608,7 @@ app.get("/api/telegram/status", async (_req: Request, res: Response) => {
 
   res.json({
     ...botStats,
-    botLink: botStats.username ? `https://t.me/${botStats.username}` : "https://t.me/SLM71_bot",
+    botLink: botStats.username ? `https://t.me/${botStats.username}` : "https://t.me/Lyunavoiceai71_bot",
     activeUsersCount: userPreferences.size,
   });
 });
